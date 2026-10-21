@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f3f5f8;
+color: #222;
+}
+
+.container {
+width: min(100% - 32px, 500px);
+margin: 50px auto;
+padding: 28px;
+background: white;
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+margin-top: 0;
+text-align: center;
+}
+
+.container > p {
+text-align: center;
+color: #555;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+label {
+margin-top: 8px;
+font-weight: 600;
+}
+
+input {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 16px;
+}
+
+input:focus {
+outline: 2px solid #2563eb;
+outline-offset: 1px;
+}
+
+button {
+margin-top: 16px;
+padding: 13px;
+background: #2563eb;
+color: white;
+border: none;
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:disabled {
+opacity: 0.6;
+cursor: not-allowed;
+}
+
+#root > .container > p[role="status"] {
+overflow-wrap: anywhere;
+}
