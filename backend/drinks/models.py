@@ -7,6 +7,7 @@ class drinksAvailable(models.Model):
     reamining=models.CharField(max_length=100,default='Full')
     number=models.PositiveIntegerField()
     location=models.CharField()
+    district=models.CharField(max_length=100,default='ernakulam')
     contact=models.IntegerField()
     price=models.PositiveIntegerField()
 
