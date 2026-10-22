@@ -4,9 +4,9 @@ class drinksAvailable(models.Model):
 
 # Create your models here.
     brand=models.CharField(max_length=100)
-    quantity=models.CharField(max_length=100,default='Full')
+    quantity=models.IntegerField()
     number=models.PositiveIntegerField()
-    location=models.CharField()
+    location=models.CharField(max_length=255)
     district=models.CharField(max_length=100,default='ernakulam')
     contact=models.CharField(max_length=20)
     price=models.PositiveIntegerField()

@@ -2,7 +2,7 @@ from rest_framework import generics
 from .models import drinksAvailable
 from .serializers import drinkAvailableserializer
 
-class drinkAvailableCreateView(generics.CreateAPIView):
+class drinkAvailableListCreateView(generics.ListCreateAPIView):
     queryset=drinksAvailable.objects.all()
     serializer_class=drinkAvailableserializer
-    
+

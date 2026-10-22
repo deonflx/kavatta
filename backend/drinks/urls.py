@@ -1,10 +1,10 @@
 from django.urls import path
-from .api_views import drinkAvailableCreateView;
+from .api_views import drinkAvailableListCreateView;
 
 urlpatterns = [
     path(
         'orders/',
-        drinkAvailableCreateView.as_view(),
+        drinkAvailableListCreateView.as_view(),
         name='create-order'
     ),
 ]
